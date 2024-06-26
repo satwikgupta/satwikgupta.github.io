@@ -1,0 +1,204 @@
+{
+  "links": [
+    {
+      "name": "home",
+      "path": "/"
+    },
+    {
+      "name": "resume",
+      "path": "/resume"
+    },
+    {
+      "name": "work",
+      "path": "/work"
+    },
+    {
+      "name": "contact",
+      "path": "/contact"
+    }
+  ],
+  "socials": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/satwikgupta18/"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/satwikgupta/"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/SatwikGupta1801"
+    }
+  ],
+  "stats": [
+    {
+      "num": 0,
+      "text": "Years of Experience"
+    },
+    {
+      "num": 5,
+      "text": "Projects Completed"
+    },
+    {
+      "num": 7,
+      "text": "Technologies Learned"
+    },
+    {
+      "num": 150,
+      "text": "Code Commits"
+    }
+  ],
+  "about": {
+    "title": "About Me",
+    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "info": [
+      {
+        "fieldName": "Name",
+        "fieldValue": "Satwik Gupta"
+      },
+      {
+        "fieldName": "Phone",
+        "fieldValue": "(+91) 9305426444"
+      },
+      {
+        "fieldName": "Experience",
+        "fieldValue": "1+ Years"
+      },
+      {
+        "fieldName": "Email",
+        "fieldValue": "satwikgupta1801@gmail.com"
+      },
+      {
+        "fieldName": "Nationality",
+        "fieldValue": "Indian"
+      },
+      {
+        "fieldName": "Languages",
+        "fieldValue": "English, Hindi"
+      }
+    ]
+  },
+  "experience": {
+    "icon": "/assets/resume/badge.svg",
+    "title": "My Experience",
+    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "items": [
+      {
+        "company": "Microsoft",
+        "position": "Software Developer",
+        "duration": "2021 - 2022"
+      },
+      {
+        "company": "Amazon",
+        "position": "Software Engineer Intern",
+        "duration": "Summer 2020"
+      },
+      {
+        "company": "Facebook",
+        "position": "Software Engineer",
+        "duration": "2018 - 2021"
+      }
+    ]
+  },
+  "education": {
+    "icon": "/assets/resume/cap.svg",
+    "title": "My Education",
+    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "items": [
+      {
+        "institution": "National Institute of Technology, Agartala",
+        "degree": "Bachelor of Technology",
+        "duration": "2021 - 2025"
+      },
+      {
+        "institution": "Sant Atualanand Covent School",
+        "degree": "Higher Secondary",
+        "duration": "2018 - 2020"
+      },
+      {
+        "institution": "Sant Atualanand Covent School",
+        "degree": "High School",
+        "duration": "2016 - 2018"
+      }
+    ]
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "skills": [
+      {
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "name": "React.js",
+        "icon": "react"
+      },
+      {
+        "name": "Node.js",
+        "icon": "nodejs"
+      },
+      {
+        "name": "Next.js",
+        "icon": "nextjs"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "tailwind"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "num": "01",
+      "category": "frontend",
+      "title": "project 1",
+      "description": "This is the project that I made.",
+      "stack": [
+        { "name": "Html 5" },
+        { "name": "Css 3" },
+        { "name": "JavaScript" }
+      ],
+      "image": "/assets/work/thumb1.png",
+      "live": "",
+      "github": ""
+    },
+    {
+      "num": "02",
+      "category": "backend",
+      "title": "project 2",
+      "description": "This is the project that I made.",
+      "stack": [
+        { "name": "Node.js" },
+        { "name": "Express.js" },
+        { "name": "MongoDB" }
+      ],
+      "image": "/assets/work/thumb2.png",
+      "live": "",
+      "github": ""
+    },
+    {
+      "num": "03",
+      "category": "fullstack",
+      "title": "project 3",
+      "description": "This is the project that I made.",
+      "stack": [
+        { "name": "React.js" },
+        { "name": "Node.js" },
+        { "name": "MongoDB" }
+      ],
+      "image": "/assets/work/thumb3.png",
+      "live": "",
+      "github": ""
+    }
+  ]
+}

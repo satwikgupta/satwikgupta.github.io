@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+  .h1 {
+    @apply text-[44px] md:text-[60px] lg:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] md:text-[40px] lg:text-[46px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] md:text-[22px] lg:text-[24px] leading-[1.1] font-semibold;
+  }
+  .font-outline {
+    -webkit-text-stroke: 2px white;
+  }
+  
+}
