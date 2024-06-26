@@ -51,7 +51,7 @@
   ],
   "about": {
     "title": "About Me",
-    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "description": "Always curious and learning.",
     "info": [
       {
         "fieldName": "Name",
@@ -82,29 +82,19 @@
   "experience": {
     "icon": "/assets/resume/badge.svg",
     "title": "My Experience",
-    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "description": "My journey in Software Developing began with Simple Websites. This experience taught me the importance of consistent work.",
     "items": [
       {
-        "company": "Microsoft",
-        "position": "Software Developer",
-        "duration": "2021 - 2022"
-      },
-      {
-        "company": "Amazon",
-        "position": "Software Engineer Intern",
-        "duration": "Summer 2020"
-      },
-      {
-        "company": "Facebook",
-        "position": "Software Engineer",
-        "duration": "2018 - 2021"
+        "company": "JP Morgan",
+        "position": "Software Engineering Virtual Experience",
+        "duration": "Sep 2023"
       }
     ]
   },
   "education": {
     "icon": "/assets/resume/cap.svg",
     "title": "My Education",
-    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "description": "My Educational Journey",
     "items": [
       {
         "institution": "National Institute of Technology, Agartala",
@@ -125,7 +115,7 @@
   },
   "skills": {
     "title": "My Skills",
-    "description": "lowfwefjwhabevuihfbuwehb vfuwcaheufhnaweiluhvcniwyvge fiuwegv iyhq4w igfuebv",
+    "description": "My Skillset: A Powerful Toolbox for Driving Results and Continuous Learning",
     "skills": [
       {
         "name": "HTML",
@@ -161,22 +151,22 @@
     {
       "num": "01",
       "category": "frontend",
-      "title": "project 1",
-      "description": "This is the project that I made.",
+      "title": "CSS Website",
+      "description": "The bustling online platform connects residents, promotes upcoming events, and highlights community initiatives.",
       "stack": [
-        { "name": "Html 5" },
-        { "name": "Css 3" },
-        { "name": "JavaScript" }
+        { "name": "React.Js" },
+        { "name": "JavaScript" },
+        { "name": "Tailwind CSS" }
       ],
       "image": "/assets/work/thumb1.png",
-      "live": "",
-      "github": ""
+      "live": "https://css-nita.netlify.app/",
+      "github": "https://github.com/CSS-NITA/officialWebsite"
     },
     {
       "num": "02",
       "category": "backend",
-      "title": "project 2",
-      "description": "This is the project that I made.",
+      "title": "Vlogging Website Backend",
+      "description": "The project include the backend of a vlogging website. It includes the user authentication, video upload, subscription, like, comment, etc.",
       "stack": [
         { "name": "Node.js" },
         { "name": "Express.js" },
@@ -184,21 +174,66 @@
       ],
       "image": "/assets/work/thumb2.png",
       "live": "",
-      "github": ""
+      "github": "https://github.com/satwikgupta/backend-project"
     },
     {
       "num": "03",
       "category": "fullstack",
-      "title": "project 3",
-      "description": "This is the project that I made.",
+      "title": "Street Light Complaint Management System",
+      "description": "This website accepts and handles the complaint data from consumer to inspection officer.",
       "stack": [
+        { "name": "MongoDB" },
+        { "name": "Express.js" },
         { "name": "React.js" },
         { "name": "Node.js" },
-        { "name": "MongoDB" }
+        { "name": "Tailwind CSS" }
       ],
       "image": "/assets/work/thumb3.png",
       "live": "",
-      "github": ""
+      "github": "https://github.com/satwikgupta/Street-Light-Complaint-System"
+    },
+    {
+      "num": "04",
+      "category": "frontend",
+      "title": "ToDo Application",
+      "description": "This application accepts the todo list from the user and stores it into loacl storage of browser.",
+      "stack": [
+        { "name": "React.Js" },
+        { "name": "JavaScript" },
+        { "name": "Tailwind CSS" }
+      ],
+      "image": "/assets/work/thumb1.png",
+      "live": "https://todo-list-normal.vercel.app/",
+      "github": "https://github.com/satwikgupta/todoLocal"
+    },
+    {
+      "num": "05",
+      "category": "fullstack",
+      "title": "Peek Me",
+      "description": "The anonymous messenging website that gives the user shareable link to send anonymous messages.",
+      "stack": [
+        { "name": "Next.Js" },
+        { "name": "Tailwind CSS" }
+      ],
+      "image": "/assets/work/thumb3.png",
+      "live": "https://peek-me.vercel.app/",
+      "github": "https://github.com/satwikgupta/PeekMe"
+    },
+    {
+      "num": "06",
+      "category": "fullstack",
+      "title": "Online Clearance System",
+      "description": "This system allows individuals or organizations to submit clearance requests, track their progress, and receive electronic clearances or approvals.",
+      "stack": [
+        { "name": "MongoDB" },
+        { "name": "Express.js" },
+        { "name": "React.js" },
+        { "name": "Node.js" },
+        { "name": "Tailwind CSS" }
+      ],
+      "image": "/assets/work/thumb1.png",
+      "live": "",
+      "github": "https://github.com/satwikgupta/Online_Clearance_System"
     }
   ]
 }
