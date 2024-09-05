@@ -33,10 +33,10 @@ const WorkPage = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { 
-          delay: 2.4, 
-          duration: 0.4, 
-          ease: "easeInOut" 
+        transition: {
+          delay: 2.4,
+          duration: 0.4,
+          ease: "easeInOut",
         },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 lg:px-0"
@@ -49,11 +49,12 @@ const WorkPage = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize ">
-                {project.category} project
+                {project.title}
               </h2>
+              <span className="capitalize text-2xl text-accent/60">{project.category} project</span>
               <p className="text-white/60">{project.description}</p>
 
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 ">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -127,7 +128,13 @@ const WorkPage = () => {
               })}
 
               {/* slider buttons */}
-              <WorkSliderBtns containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none" btnStyle={"bg-accent hover:bg-accent-hover text-primary text-[22px] h-[44px] w-[44px] flex justify-center items-center transition-all"} iconsStyle={""} />
+              <WorkSliderBtns
+                containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none"
+                btnStyle={
+                  "bg-accent hover:bg-accent-hover text-primary text-[22px] h-[44px] w-[44px] flex justify-center items-center transition-all"
+                }
+                iconsStyle={""}
+              />
             </Swiper>
           </div>
         </div>
