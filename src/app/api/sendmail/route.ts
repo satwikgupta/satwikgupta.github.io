@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
     return Response.json(
       {
-        message: result,
+        message: "Email has been sent successfully.",
       },
       { status: 200 }
     );
