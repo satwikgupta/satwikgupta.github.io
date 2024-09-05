@@ -14,18 +14,18 @@ const transporter = nodemailer.createTransport({
 
 type SendEmailDto = {
     subject: string;
-    message: string;
+    html: string;
 }
 
 export const sendMail = async (dto: SendEmailDto) => {
-    const { subject, message } = dto;
+    const { subject, html } = dto;
 
     return await transporter.sendMail({
       from: email,
       to: email,
       subject,
-      html: message,
-      text: message,
+      html,
+      text: "This is an email from your portfolio",
     });
 
 }

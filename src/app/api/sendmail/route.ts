@@ -10,24 +10,23 @@ export interface ContactFormData {
 }
 
 export async function POST(req: Request) {
-  const { firstname, lastname, email, phone, message }: ContactFormData =
-    await req.json();
-
   try {
+    const { firstname, lastname, email, phone, message }: ContactFormData =
+      await req.json();
+
     const result = await sendMail({
       subject: "You have a visit on your website.",
-      message: mailler({ firstname, lastname, email, phone, message }),
+      html: mailler({ firstname, lastname, email, phone, message }),
     });
 
     return Response.json(
-      {
-        message: "Email has been sent successfully.",
-      },
+      { message: "Email has been sent successfully." },
       { status: 200 }
     );
   } catch (error) {
+    console.error("Error in POST route:", error);
     return Response.json(
-      { message: "Unable to send email this time, please try again" },
+      { message: error },
       { status: 500 }
     );
   }
