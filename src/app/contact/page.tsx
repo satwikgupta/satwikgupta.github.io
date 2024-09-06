@@ -16,8 +16,9 @@ import {
 } from "@/components/ui/select";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser"
 
 const info = [
   {
@@ -38,40 +39,39 @@ const info = [
 ];
 
 const ContactPage = () => {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
 
-  const [loading, setLoading] = useState(false);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendMail = (e: any) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState<boolean | null>(null);
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if(firstname === "" || lastname === "" || email === "" || phone === "" || message === "") {
-      toast.error("Please fill all the fields.");
-      return;
+    setIsSubmitting(true);
+
+    try {
+      if (form.current) {
+        await emailjs.sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          form.current,
+          {
+            publicKey: process.env.NEXT_PUBLIC_EMAILJS_USER_ID!,
+          }
+        );
+        setSubmitSuccess(true);
+        toast.success("Email sent successfully.");
+      }
+    } catch (error) {
+      setSubmitSuccess(false);
+      console.error(error);
+      toast.error("Failed to send email. Please try again later.");
     }
-    setLoading(true);
-    fetch("/api/sendmail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ firstname, lastname, email, phone, message }),
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        toast.success("Email has been sent successfully.");
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error("Unable to send email this time, please try again");
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+
+    setIsSubmitting(false);
+    (form.current as HTMLFormElement).reset();
+
+    setTimeout(() => setSubmitSuccess(null), 5000);
   };
 
   return (
@@ -91,7 +91,8 @@ const ContactPage = () => {
         <div className="flex flex-col lg:flex-row gap-[30px]">
           <div className="lg:w-[54%] order-2 lg:order-none">
             <form
-              action=""
+              ref={form}
+              onSubmit={sendEmail}
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
             >
               <h3 className="text-4xl text-accent">Let's work together</h3>
@@ -99,47 +100,36 @@ const ContactPage = () => {
                 Fill the below form and I will get back to you as soon as
                 possible.
               </p>
-              {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
-                  type="firstname"
+                  name="firstname"
                   placeholder="First Name"
-                  value={firstname}
-                  onChange={(e) => setFirstname(e.target.value)}
                 />
                 <Input
-                  type="lastname"
+                  name="lastname"
                   placeholder="Last Name"
-                  value={lastname}
-                  onChange={(e) => setLastname(e.target.value)}
                 />
                 <Input
-                  type="email"
+                  name="email"
                   placeholder="Email Address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <Input
-                  type="phone"
+                  name="phone"
                   placeholder="Phone Number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              {/* text area */}
               <Textarea
                 placeholder="Type your message here."
                 className="h-[200px]"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                name="message"
               />
-              {/* button */}
               <Button
                 size="md"
                 className="max-w-40"
-                onClick={(e) => sendMail(e)}
+                type="submit"
+                disabled={isSubmitting}
               >
-                {loading ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
@@ -148,7 +138,7 @@ const ContactPage = () => {
               {info.map((item, index) => {
                 return (
                   <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] lg:w-[72px] ;g:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                    <div className="w-[52px] h-[52px] lg:w-[72px] lg:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
