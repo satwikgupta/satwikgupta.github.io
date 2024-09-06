@@ -73,7 +73,7 @@ const ContactPage = () => {
 
     setTimeout(() => setSubmitSuccess(null), 5000);
   };
-
+console.log(process.env.NEXT_PUBLIC_ID)
   return (
     <motion.section
       initial={{ opacity: 0 }}
