@@ -24,12 +24,14 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  NEXT_PUBLIC_ID: ${{ vars.NEXT_PUBLIC_ID }}
+  TEMP_ID: satwik
+  
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_ID: ${{ vars.NEXT_PUBLIC_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -74,7 +76,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Env check
-        run: echo "My PUBLIC_ID is ${{env.NEXT_PUBLIC_ID}} or secret is ${{secrets.NEXT_PUBLIC_ID}} or variables is ${{vars.NEXT_PUBLIC_ID}}"
+        run: echo "My PUBLIC_ID is ${{env.NEXT_PUBLIC_ID}} or secret is ${{secrets.NEXT_PUBLIC_ID}} or variables is ${{vars.NEXT_PUBLIC_ID}}, at last ${{ env.TEMP_ID }}"
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
