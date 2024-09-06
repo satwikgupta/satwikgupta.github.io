@@ -25,8 +25,10 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  NEXT_PUBLIC_ID: ${{ vars.NEXT_PUBLIC_ID }}
-  TEMP_ID: satwik
+  NEXT_PUBLIC_EMAILJS_SERVICE_ID: service_2dj78ob
+  NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: template_rv0lswi
+  NEXT_PUBLIC_EMAILJS_USER_ID: 38mqGqmRuLFxL1xU8
+  NEXT_PUBLIC_ID: satwikgupta
   
 jobs:
   # Build job
