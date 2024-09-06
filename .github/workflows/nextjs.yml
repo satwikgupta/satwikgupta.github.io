@@ -74,7 +74,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Env check
-        run: echo "My PUBLIC_ID id ${{env.NEXT_PUBLIC_ID}}"
+        run: echo "My PUBLIC_ID is ${{env.NEXT_PUBLIC_ID}} or secret is ${{secrets.NEXT_PUBLIC_ID}} or variables is ${{vars.NEXT_PUBLIC_ID}}"
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
