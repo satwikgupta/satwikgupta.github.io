@@ -73,7 +73,7 @@ const ContactPage = () => {
 
     setTimeout(() => setSubmitSuccess(null), 5000);
   };
-console.log(process.env.NEXT_PUBLIC_ID)
+console.log(process.env.NEXT_PUBLIC_ID, process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
   return (
     <motion.section
       initial={{ opacity: 0 }}

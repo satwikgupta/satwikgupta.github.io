@@ -85,7 +85,11 @@
     "description": "My journey in Software Developing began with Simple Websites. This experience taught me the importance of consistent work.",
     "items": [
       {
-        "company": "JP Morgan",
+        "company": "R Systems",
+        "position": "Software Engineering Intern",
+        "duration": "May 2024 - Jul 2024"
+      },{
+        "company": "JP Morgan & Chase",
         "position": "Software Engineering Virtual Experience",
         "duration": "Sep 2023"
       }
@@ -122,10 +126,6 @@
         "icon": "html"
       },
       {
-        "name": "CSS",
-        "icon": "css"
-      },
-      {
         "name": "JavaScript",
         "icon": "javascript"
       },
@@ -144,6 +144,29 @@
       {
         "name": "Tailwind CSS",
         "icon": "tailwind"
+      },{
+        "name": "Cloudinary",
+        "icon": "cloudinary"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "name": "Firebase",
+        "icon": "firebase"
+      },
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "GitHub",
+        "icon": "github"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman"
       }
     ]
   },

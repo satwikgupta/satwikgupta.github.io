@@ -1,7 +1,8 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiCloudinary, SiMongodb, SiVercel, SiPostman } from "react-icons/si";
+import { RiFirebaseFill } from "react-icons/ri";
 import { education, skills, experience, about } from "@/data.json";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -20,6 +21,12 @@ const skillIcons: any = {
   nodejs: <FaNodeJs />,
   tailwind: <SiTailwindcss />,
   nextjs: <SiNextdotjs />,
+  cloudinary: <SiCloudinary />,
+  firebase: <RiFirebaseFill />,
+  mongodb: <SiMongodb />,
+  git: <FaGitAlt />,
+  github: <FaGithub />,
+  postman: <SiPostman />,
 };
 
 const ResumePage = () => {
