@@ -28,7 +28,7 @@ export default function Home() {
                 className="uppercase flex text-xl items-center gap-2"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1hRHWnjFaD2lZOjVUxcMP89vHwb7hS-zX/view?usp=sharing",
+                    "https://drive.google.com/file/d/1xioZggq4WgQgJGZyDkkrXVluMSJWLtMb/view?usp=drivesdk",
                     "_blank"
                   )
                 }
