@@ -1,8 +1,9 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiCloudinary, SiMongodb, SiVercel, SiPostman } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaJava } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiCloudinary, SiMongodb, SiVercel, SiPostman, SiSpringboot, SiSpringsecurity, SiApachekafka, SiPostgresql, SiTypescript } from "react-icons/si";
 import { RiFirebaseFill } from "react-icons/ri";
+import { FaWandMagic } from "react-icons/fa6";
 import { education, skills, experience, about } from "@/data.json";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -17,6 +18,8 @@ const skillIcons: any = {
   html: <FaHtml5 />,
   css: <FaCss3 />,
   javascript: <FaJs />,
+  typescript: <SiTypescript />,
+  magicui: <FaWandMagic />,
   react: <FaReact />,
   nodejs: <FaNodeJs />,
   tailwind: <SiTailwindcss />,
@@ -27,6 +30,11 @@ const skillIcons: any = {
   git: <FaGitAlt />,
   github: <FaGithub />,
   postman: <SiPostman />,
+  springboot: <SiSpringboot />,
+  java: <FaJava />,
+  springsecurity: <SiSpringsecurity />,
+  kafka: <SiApachekafka />,
+  postgres: <SiPostgresql />
 };
 
 const ResumePage = () => {

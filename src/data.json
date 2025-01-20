@@ -85,10 +85,16 @@
     "description": "My journey in Software Developing began with Simple Websites. This experience taught me the importance of consistent work.",
     "items": [
       {
+        "company": "Birla Pivot",
+        "position": "Software Engineering Intern",
+        "duration": "Jan 2025 - Present"
+      },
+      {
         "company": "R Systems",
         "position": "Software Engineering Intern",
         "duration": "May 2024 - Jul 2024"
-      },{
+      },
+      {
         "company": "JP Morgan & Chase",
         "position": "Software Engineering Virtual Experience",
         "duration": "Sep 2023"
@@ -126,8 +132,16 @@
         "icon": "html"
       },
       {
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
         "name": "JavaScript",
         "icon": "javascript"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "typescript"
       },
       {
         "name": "React.js",
@@ -144,7 +158,8 @@
       {
         "name": "Tailwind CSS",
         "icon": "tailwind"
-      },{
+      },
+      {
         "name": "Cloudinary",
         "icon": "cloudinary"
       },
@@ -167,10 +182,45 @@
       {
         "name": "Postman",
         "icon": "postman"
+      },
+      {
+        "name": "Java",
+        "icon": "java"
+      },
+      {
+        "name": "SpringBoot",
+        "icon": "springboot"
+      },
+      {
+        "name": "PostgresSQL",
+        "icon": "postgres"
+      },
+      {
+        "name": "Kafka",
+        "icon": "kafka"
+      },
+      {
+        "name": "SpringSecurity",
+        "icon": "springsecurity"
       }
     ]
   },
   "projects": [
+    {
+      "num": "09",
+      "category": "frontend",
+      "title": "Tapas Media",
+      "description": "Built a responsive, user-friendly front-end for a small business that enhanced their online presence.",
+      "stack": [
+        { "name": "React.js" },
+        { "name": "Node.js" },
+        { "name": "Tailwind CSS" },
+        { "name": "MagicUI" }
+      ],
+      "image": "assets/work/tapasMedia.png",
+      "live": "https://tapas-media.vercel.app/",
+      "github": "https://github.com/satwikgupta/TapasMedia"
+    },
     {
       "num": "01",
       "category": "frontend",
@@ -234,30 +284,12 @@
       "category": "fullstack",
       "title": "Peek Me",
       "description": "The anonymous messenging website that gives the user shareable link to send anonymous messages.",
-      "stack": [
-        { "name": "Next.Js" },
-        { "name": "Tailwind CSS" }
-      ],
+      "stack": [{ "name": "Next.Js" }, { "name": "Tailwind CSS" }],
       "image": "/assets/work/peek_me.png",
       "live": "https://peek-me.vercel.app/",
       "github": "https://github.com/satwikgupta/PeekMe"
     },
     {
-      "num": "06",
-      "category": "fullstack",
-      "title": "Online Clearance System",
-      "description": "This system allows individuals or organizations to submit clearance requests, track their progress, and receive electronic clearances or approvals.",
-      "stack": [
-        { "name": "MongoDB" },
-        { "name": "Express.js" },
-        { "name": "React.js" },
-        { "name": "Node.js" },
-        { "name": "Tailwind CSS" }
-      ],
-      "image": "/assets/work/online_clearance.png",
-      "live": "",
-      "github": "https://github.com/satwikgupta/Online_Clearance_System"
-    },{
       "num": "07",
       "category": "fullstack",
       "title": "Portfolio",
